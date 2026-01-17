@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-MAKER Reliability Simulation: Comparing Standard Agent vs. MAKER Agent.
+Agent-Zero Reliability Simulation: Comparing Standard Agent vs. Agent-Zero.
 
 This script simulates a multi-step task (like Tower of Hanoi or code refactoring)
-and demonstrates how MAKER's voting principle prevents exponential reliability decay.
+and demonstrates how Agent-Zero's voting principle prevents exponential reliability decay.
 """
 
 import random
@@ -33,7 +33,7 @@ def run_standard_agent(steps: int, accuracy: float) -> Tuple[bool, int]:
     return True, steps
 
 def run_maker_agent(steps: int, accuracy: float, k: int) -> Tuple[bool, int, int]:
-    """Simulates MAKER agent with voting at every step."""
+    """Simulates Agent-Zero agent with voting at every step."""
     total_calls = 0
     for i in range(1, steps + 1):
         # MAKER samples until consensus
@@ -55,12 +55,12 @@ def run_maker_agent(steps: int, accuracy: float, k: int) -> Tuple[bool, int, int
 
 def main():
     print("="*60)
-    print(f"MAKER RELIABILITY SIMULATION")
+    print(f"AGENT-ZERO RELIABILITY SIMULATION")
     print(f"Task Length: {TOTAL_STEPS} steps")
     print(f"Agent Step-wise Accuracy: {LLM_ACCURACY*100}%")
-    print(f"MAKER Voting Margin (k): {VOTING_K}")
+    print(f"Agent-Zero Voting Margin (k): {VOTING_K}")
     print("="*60)
-    print("\n[1] Running Standard Agent (No MAKER)...")
+    print("\n[1] Running Standard Agent (No Agent-Zero)...")
     
     standard_successes = 0
     trials = 1000
@@ -72,7 +72,7 @@ def main():
     print(f"  - Success Rate: {standard_successes/trials*100:.2f}%")
     print(f"  - Theoretical:  {(LLM_ACCURACY**TOTAL_STEPS)*100:.8f}%")
     
-    print("\n[2] Running MAKER Agent (Voting & Decomposition)...")
+    print("\n[2] Running Agent-Zero (Voting & Decomposition)...")
     
     maker_successes = 0
     total_calls_to_llm = 0
@@ -89,7 +89,7 @@ def main():
     print("\n" + "="*60)
     print("CONCLUSION:")
     print(f"Standard agent failure is almost certain ({100 - standard_successes/trials*100:.2f}% failure).")
-    print(f"MAKER agent achieves near-perfect reliability ({maker_successes/trials*100:.2f}%)")
+    print(f"Agent-Zero achieves near-perfect reliability ({maker_successes/trials*100:.2f}%)")
     print(f"by using ~{total_calls_to_llm/trials/TOTAL_STEPS:.1f}x more calls per step.")
     print("="*60)
 
