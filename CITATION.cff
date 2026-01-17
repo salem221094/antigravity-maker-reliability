@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this framework in your research, please cite it as follows."
+authors:
+- family-names: "Sinha"
+  given-names: "Sayan"
+- family-names: "Salem"
+  given-names: "[USER]"
+title: "Agent-Zero: A Massively Decomposed Agent Kernel for Zero-Error Execution"
+version: 1.0.0
+date-released: 2026-01-17
+url: "https://github.com/salem221094/antigravity-maker-reliability"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Sinha"
+    given-names: "Sayan"
+  - family-names: "Mishra"
+    given-names: "Abhishek"
+  - family-names: "Gunturi"
+    given-names: "Praveen"
+  - family-names: "Dyer"
+    given-names: "Chris"
+  title: "Solving a Million-Step LLM Task with Zero Errors"
+  journal: "arXiv preprint arXiv:2511.09030"
+  year: 2025
