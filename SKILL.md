@@ -7,6 +7,13 @@ description: "Automatic error-correction framework for high-stakes multi-step ta
 
 Implements the MAKER (Massively decomposed AgenT KERnel) framework for zero-error execution of long-horizon tasks.
 
+## Step 0: Modern Technology Research (MANDATORY)
+
+Before applying MAKER, verify the following:
+1.  **State of the Art**: Check for new research updates to the MAKER paper (arXiv:2511.09030v1) or subsequent meta-agent architectures.
+2.  **Model Benchmarks**: Identify the best "cheap-but-reliable" models for voting. Smaller models (e.g., GPT-4o-mini, Claude 3 Haiku) are often superior for high-k voting due to cost and latency.
+3.  **MCP Tooling**: Look for existing Model Context Protocol servers that provide specialized sub-actions (e.g., file-editing, browser-control) to use as the base for MAD decomposition.
+
 ## Core Principles
 
 ### 1. Maximal Agentic Decomposition (MAD)
@@ -77,3 +84,11 @@ For mathematical foundations (scaling laws, cost formulas, k optimization):
 |--------|---------|
 | [voting.py](scripts/voting.py) | First-to-ahead-by-k consensus voting |
 | [red_flag.py](scripts/red_flag.py) | Output validation and red-flag detection |
+
+## Definition of Done
+
+- [ ] Task is decomposed into single-step subtasks (MAD).
+- [ ] Critical decision points have a defined voting margin (k).
+- [ ] Consensus logic (vote_until_consensus) is used for all k > 1 steps.
+- [ ] Output is validated against red-flag filters prior to being committed.
+- [ ] Reliability target (e.g., 99.9%) is calculated and met via appropriate k selection.
