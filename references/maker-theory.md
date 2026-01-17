@@ -1,13 +1,13 @@
-# MAKER Framework: Theory & Scaling Laws
+# Agent-Zero: Theory & Scaling Laws
 
-Deep-dive reference on the mathematical foundations of the MAKER framework.
+Deep-dive reference on the mathematical foundations of the Agent-Zero (MAKER) framework.
 
 ## Core Insight
 
 For a task with `s` total steps and per-step accuracy `p`:
 
-**Without MAKER**: Success probability = p^s → exponentially decays  
-**With MAKER (voting)**: Success probability → near 1 (configurable via k)
+**Without Agent-Zero**: Success probability = p^s → exponentially decays  
+**With Agent-Zero (voting)**: Success probability → near 1 (configurable via k)
 
 ## Maximal Agentic Decomposition (MAD)
 
