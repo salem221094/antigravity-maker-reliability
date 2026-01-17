@@ -1,15 +1,15 @@
 ---
-name: agent-zero
-description: "The official Agent-Zero reliability framework for high-stakes multi-step tasks. Uses MAKER principles (Maximal Agentic Decomposition, voting consensus, red-flagging) to achieve zero-error execution. Auto-triggers for complex workflows or critical operations (deployment, security, financial). Compliant with ASP v2.0 Standard."
+name: mad-logic
+description: "The official MAD-Logic reliability framework for high-stakes multi-step tasks. Uses MAKER principles (Maximal Agentic Decomposition, voting consensus, red-flagging) to achieve zero-error execution. Auto-triggers for complex workflows or critical operations (deployment, security, financial). Compliant with ASP v2.0 Standard."
 ---
 
-# Agent-Zero Reliability Framework
+# MAD-Logic Reliability Framework
 
 Implements the MAKER (Massively decomposed AgenT KERnel) framework for zero-error execution of long-horizon tasks.
 
 ## Step 0: Modern Technology Research (MANDATORY)
 
-Before applying **Agent-Zero**, verify the following:
+Before applying **MAD-Logic**, verify the following:
 1.  **State of the Art**: Check for new research updates to the MAKER paper (arXiv:2511.09030v1) or subsequent meta-agent architectures.
 2.  **Model Benchmarks**: Identify the best "cheap-but-reliable" models for voting. Smaller models (e.g., GPT-4o-mini, Claude 3 Haiku) are often superior for high-k voting due to cost and latency.
 3.  **MCP Tooling**: Look for existing Model Context Protocol servers that provide specialized sub-actions (e.g., file-editing, browser-control) to use as the base for MAD decomposition.

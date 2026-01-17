@@ -1,13 +1,13 @@
-# Agent-Zero: Theory & Scaling Laws
+# MAD-Logic: Theory & Scaling Laws
 
-Deep-dive reference on the mathematical foundations of the Agent-Zero (MAKER) framework.
+Deep-dive reference on the mathematical foundations of the MAD-Logic (MAKER) framework.
 
 ## Core Insight
 
 For a task with `s` total steps and per-step accuracy `p`:
 
-**Without Agent-Zero**: Success probability = p^s → exponentially decays  
-**With Agent-Zero (voting)**: Success probability → near 1 (configurable via k)
+**Without MAD-Logic**: Success probability = p^s → exponentially decays  
+**With MAD-Logic (voting)**: Success probability → near 1 (configurable via k)
 
 ## Maximal Agentic Decomposition (MAD)
 
@@ -121,7 +121,7 @@ Red-flagging increases effective `p` by filtering bad responses:
 | Security/financial | 7 | Maximum safety |
 | Life-critical | 11+ | Overkill for most |
 
-### When NOT to Use Full MAKER
+### When NOT to Use Full MAD-Logic
 
 - Single-step tasks (just use regular prompting)
 - Exploratory/creative tasks (voting kills creativity)

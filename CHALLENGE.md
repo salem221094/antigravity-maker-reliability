@@ -1,6 +1,6 @@
 # 🏆 The Million-Step Challenge: Engineering Zero-Error Agents
 
-Standard LLM agents fail exponentially. **Agent-Zero** succeeds mathematically.
+Standard LLM agents fail exponentially. **MAD-Logic** succeeds mathematically.
 
 ## 📉 The Exponential Decay of Reliability
 
@@ -15,9 +15,9 @@ When an agent performs a task with $s$ steps, and each step has an accuracy of $
 
 At 100 steps, a standard agent is **statistically guaranteed to fail.**
 
-## 📈 The Agent-Zero Correction
+## 📈 The MAD-Logic Correction
 
-Agent-Zero implements the **MAKER Framework**, which breaks the exponential decay by introducing **First-to-ahead-by-k Voting**.
+MAD-Logic implements the **MAKER Framework**, which breaks the exponential decay by introducing **First-to-ahead-by-k Voting**.
 
 By sampling multiple responses and only proceeding when a consensus leads by $k$ votes, the per-step accuracy is boosted from $p$ to $P$:
 
@@ -28,21 +28,21 @@ For $p=0.8$ and $k=7$:
 
 ### The Result for 100 Steps:
 **Standard Agent**: ~0%  
-**Agent-Zero**: **99.6%**
+**MAD-Logic**: **99.6%**
 
 ## 🧪 Simulation Results (k=7, 1000 Trials)
 
 We ran 1000 trials of a 100-step task.
 - **Trial Length**: 100 sequential steps.
 - **Model Baseline**: 80% accuracy.
-- **Aggregator**: Agent-Zero (k=7).
+- **Aggregator**: MAD-Logic (k=7).
 
 ### [1] Standard Agent
 - **Successes**: 0 / 1000
 - **Theoretical**: $2 \times 10^{-10}$
 - **Outcome**: Certain Failure.
 
-### [2] Agent-Zero
+### [2] MAD-Logic
 - **Successes**: 997 / 1000
 - **Success Rate**: **99.70%**
 - **Avg. Workload**: 11.7x samples per step.
@@ -53,4 +53,4 @@ We ran 1000 trials of a 100-step task.
 2.  **High-k Voting**: Use $k=7$ for mission-critical tasks.
 3.  **Red-Flagging**: Discard outputs that look like hallucinations before they enter the vote.
 
-Agent-Zero isn't just a skill—it's a **mathematical guarantee** for the future of agentic work.
+MAD-Logic isn't just a skill—it's a **mathematical guarantee** for the future of agentic work.

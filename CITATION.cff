@@ -5,7 +5,7 @@ authors:
   given-names: "Sayan"
 - family-names: "Salem"
   given-names: "[USER]"
-title: "Agent-Zero: A Massively Decomposed Agent Kernel for Zero-Error Execution"
+title: "MAD-Logic: A Massively Decomposed Agent Kernel for Zero-Error Execution"
 version: 1.0.0
 date-released: 2026-01-17
 url: "https://github.com/salem221094/antigravity-maker-reliability"
